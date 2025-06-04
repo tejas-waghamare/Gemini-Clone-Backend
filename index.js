@@ -20,6 +20,6 @@ app.use(verifyUser)
 app.use("/api/v1/chat", chatRouter);
 app.use("/api/v1/message", messageRouter);
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || FRONTEND_URL;
 app.listen(port, () => console.log("❄️  Server started on port " + port));
 
